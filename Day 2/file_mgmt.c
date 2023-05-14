@@ -3,7 +3,7 @@
 
 int main(){
 
-	FILE *f1, *f2;
+	FILE *f1, *f2;//File Pointers
 	char fname[100], c;
 	printf("Enter filename for reading\n");
 	scanf("%s", fname);
@@ -28,7 +28,7 @@ int main(){
 		fputc(c, f2);
 		c = fgetc(f1);
 	}
-    
+
 	printf("Contents copied to %s", fname);
 	fclose(f1);
 	fclose(f2);
